@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,8 +47,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="General\GestionLocalidadesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\GestionLocalidadesForm.Designer.cs">
+      <DependentUpon>GestionLocalidadesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\GestionNacionalidadesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\GestionNacionalidadesForm.Designer.cs">
+      <DependentUpon>GestionNacionalidadesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\MenuPrincipalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\MenuPrincipalForm.Designer.cs">
+      <DependentUpon>MenuPrincipalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\SplashForm.Designer.cs">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="General\GestionLocalidadesForm.resx">
+      <DependentUpon>GestionLocalidadesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\GestionNacionalidadesForm.resx">
+      <DependentUpon>GestionNacionalidadesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\MenuPrincipalForm.resx">
+      <DependentUpon>MenuPrincipalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -77,9 +114,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Cliente\" />
-    <Folder Include="Factura\" />
-    <Folder Include="Paquete\" />
+    <Folder Include="1_Cliente\" />
+    <Folder Include="2_Paquete\" />
+    <Folder Include="3_Factura\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
