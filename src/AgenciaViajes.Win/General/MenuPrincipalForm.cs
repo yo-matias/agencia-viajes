@@ -31,6 +31,26 @@ namespace AgenciaViajes.Win.General
 
             // Corta hilo
             thread.Abort();
+
+            ValidarConexionDB();
+        }
+
+        /// <summary>
+        /// Controla si es válida la conexión a la DB
+        /// </summary>
+        private void ValidarConexionDB()
+        {
+            if (!Configuracion.ValidarConexionDB())
+            {
+                // Inhabilito botones
+                btnGestionNacionalidades.Enabled = false;
+                btnGestionLocalidades.Enabled = false;
+
+                // Muestro alerta
+                MessageBox.Show("Error al intentar conectar a la DB.", "Error DB", MessageBoxButtons.OK);
+                
+            }
+            
         }
 
         public void SplashForm()

@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Configuration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data;
+using System.Data.Common;
 
 namespace AgenciaViajes.Library.Common
 {
@@ -16,15 +14,19 @@ namespace AgenciaViajes.Library.Common
         /// Nombre de la Base de Datos
         /// </summary>
         public static readonly string NombreDB = "AgenciaViajesDB";
-        
+
         /// <summary>
         /// Obtiene la cadena de conexión a DB almacenada en la configuración
         /// </summary>
         /// <returns>Cadena de Conexión a DB</returns>
         public static string ObtenerConnectionString()
         {
-            //TODO: Controlar que exista la cadena de conexión
-            return ConfigurationManager.ConnectionStrings[NombreDB].ConnectionString;
+            string connectionString = ConfigurationManager.ConnectionStrings[NombreDB].ConnectionString;
+            if (string.IsNullOrEmpty(connectionString))
+            {
+                throw new Exception("No existe información de conexión.");
+            }
+            return connectionString;
         }
 
         /// <summary>
@@ -34,8 +36,27 @@ namespace AgenciaViajes.Library.Common
         /// <returns>Parámetro de Configuración</returns>
         public static string ObtenerConfig(string parametro)
         {
-
             return ConfigurationManager.AppSettings[parametro];
+        }
+
+        /// <summary>
+        /// Valida si la conexión a la DB es funcional
+        /// </summary>
+        /// <returns>Verdadero en caso de conectar correctamente</returns>
+        public static bool ValidarConexionDB()
+        {
+            try
+            {
+                using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(ObtenerConnectionString()))
+                {
+                    connection.Open();
+                    return true;
+                }
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
     }
 }
