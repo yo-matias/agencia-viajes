@@ -60,6 +60,7 @@
     <Folder Include="Properties" />
     <Folder Include="Tables\" />
     <Folder Include="Stored Procedures\" />
+    <Folder Include="Scripts" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Ciudades.sql" />
@@ -76,5 +77,10 @@
     <Build Include="Stored Procedures\spPaises_ObtenerTodo.sql" />
     <Build Include="Stored Procedures\spNacionalidades_ObtenerTodo.sql" />
     <Build Include="Stored Procedures\spNacionalidades_ObtenerPorId.sql" />
+    <Build Include="Stored Procedures\spCiudades_ObtenerPorDescripcion.sql" />
+    <Build Include="Stored Procedures\spPaises_ObtenerPorDescripcion.sql" />
+    <Build Include="Stored Procedures\spProvincias_ObtenerPorDescripcion.sql" />
+    <Build Include="Stored Procedures\spCiudades_ObtenerPorCriterio.sql" />
+    <None Include="Scripts\InicializarLocalidades.sql" />
   </ItemGroup>
 </Project>
