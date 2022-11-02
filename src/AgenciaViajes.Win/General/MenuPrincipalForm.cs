@@ -1,6 +1,9 @@
 ﻿using AgenciaViajes.Library.Common;
 using AgenciaViajes.Library.DataAccess;
+using AgenciaViajes.Library.Models;
 using AgenciaViajes.Win.General;
+using AgenciaViajes.Win.Selectores;
+using AgenciaViajes.Win.Selectores.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,7 +17,7 @@ using System.Windows.Forms;
 
 namespace AgenciaViajes.Win.General
 {
-    public partial class MenuPrincipalForm : Form
+    public partial class MenuPrincipalForm : Form, ILocalidadesRequestor
     {
         
         public MenuPrincipalForm()
@@ -83,5 +86,16 @@ namespace AgenciaViajes.Win.General
         }
 
         #endregion
+
+        private void btnSelectorLocalidades_Click(object sender, EventArgs e)
+        {
+            var form = new SelectorLocalidadesForm(this);
+            form.Show();
+        }
+
+        public void CiudadSeleccionada(CiudadModel ciudad)
+        {
+            MessageBox.Show($"Localidad seleccionada: {ciudad.Descripcion} de la provincia de {ciudad.Provincia.Descripcion} en el país {ciudad.Provincia.Pais.Descripcion}!");
+        }
     }
 }

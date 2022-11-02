@@ -31,12 +31,13 @@
             this.btnGestionNacionalidades = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnGestionLocalidades = new System.Windows.Forms.Button();
+            this.btnSelectorLocalidades = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnGestionNacionalidad
+            // btnGestionNacionalidades
             // 
             this.btnGestionNacionalidades.Location = new System.Drawing.Point(50, 50);
-            this.btnGestionNacionalidades.Name = "btnGestionNacionalidad";
+            this.btnGestionNacionalidades.Name = "btnGestionNacionalidades";
             this.btnGestionNacionalidades.Size = new System.Drawing.Size(162, 23);
             this.btnGestionNacionalidades.TabIndex = 0;
             this.btnGestionNacionalidades.Text = "Gestión Nacionalidad";
@@ -53,15 +54,25 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
-            // btnLocalidades
+            // btnGestionLocalidades
             // 
             this.btnGestionLocalidades.Location = new System.Drawing.Point(50, 79);
-            this.btnGestionLocalidades.Name = "btnLocalidades";
+            this.btnGestionLocalidades.Name = "btnGestionLocalidades";
             this.btnGestionLocalidades.Size = new System.Drawing.Size(162, 23);
             this.btnGestionLocalidades.TabIndex = 0;
             this.btnGestionLocalidades.Text = "Gestión Localidades";
             this.btnGestionLocalidades.UseVisualStyleBackColor = true;
             this.btnGestionLocalidades.Click += new System.EventHandler(this.BtnGestionLocalidades_Click);
+            // 
+            // btnSelectorLocalidades
+            // 
+            this.btnSelectorLocalidades.Location = new System.Drawing.Point(218, 50);
+            this.btnSelectorLocalidades.Name = "btnSelectorLocalidades";
+            this.btnSelectorLocalidades.Size = new System.Drawing.Size(162, 23);
+            this.btnSelectorLocalidades.TabIndex = 0;
+            this.btnSelectorLocalidades.Text = "Selector Localidades";
+            this.btnSelectorLocalidades.UseVisualStyleBackColor = true;
+            this.btnSelectorLocalidades.Click += new System.EventHandler(this.btnSelectorLocalidades_Click);
             // 
             // MenuPrincipalForm
             // 
@@ -70,6 +81,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnGestionLocalidades);
+            this.Controls.Add(this.btnSelectorLocalidades);
             this.Controls.Add(this.btnGestionNacionalidades);
             this.Name = "MenuPrincipalForm";
             this.Text = "MenuPrincipalForm";
@@ -82,5 +94,6 @@
         private System.Windows.Forms.Button btnGestionNacionalidades;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnGestionLocalidades;
+        private System.Windows.Forms.Button btnSelectorLocalidades;
     }
 }
