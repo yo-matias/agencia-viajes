@@ -40,5 +40,17 @@ namespace AgenciaViajes.Library.DataAccess
             //TODO: Implementar alta de Provincia
             throw new NotImplementedException();
         }
+
+        public static List<ProvinciaModel> ObtenerProvinciasPorDescripcion(string descripcion)
+        {
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(ConnectionString))
+            {
+                var parametros = new DynamicParameters();
+                parametros.Add("@Descripcion", descripcion);
+
+                var output = connection.Query<ProvinciaModel>("[dbo].[spProvincias_ObtenerPorDescripcion]", parametros, commandType: CommandType.StoredProcedure).ToList();
+                return output;
+            }
+        }
     }
 }

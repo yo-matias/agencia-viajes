@@ -1,4 +1,5 @@
 ﻿using AgenciaViajes.Library.DataAccess;
+using AgenciaViajes.Library.DTO;
 using AgenciaViajes.Library.Models;
 using System;
 using System.Collections.Generic;
@@ -23,11 +24,31 @@ namespace AgenciaViajes.Library.Logic
         {
             return CiudadesRepository.ObtenerCiudades();
         }
-        
+
+        public static List<CiudadModel> ObtenerCiudadesPorDescripcion(string descripcion)
+        {
+            return CiudadesRepository.ObtenerCiudadesPorDescripcion(descripcion);
+        }
+
+        public static List<LocalidadDto> ObtenerCiudadesPorCriterio(LocalidadDto busqueda)
+        {
+            return CiudadesRepository.ObtenerCiudadesPorCriterio(busqueda);
+        }
+
+        public static CiudadModel InstanciarCiudad(LocalidadDto localidad)
+        {
+            PaisModel pais = new PaisModel(localidad.IdPais, localidad.DescripcionPais);
+            ProvinciaModel provincia = new ProvinciaModel(localidad.IdProvincia, localidad.DescripcionProvincia, pais);
+            CiudadModel ciudad = new CiudadModel(localidad.IdCiudad, localidad.DescripcionCiudad, provincia);
+
+            return ciudad;
+
+        }
+
         #endregion
 
         #region Provincias
-        
+
         /// <summary>
         /// Obtiene las Provincias
         /// </summary>
@@ -36,11 +57,16 @@ namespace AgenciaViajes.Library.Logic
         {
             return ProvinciasRepository.ObtenerProvincias();
         }
-        
+
+        public static List<ProvinciaModel> ObtenerProvinciasPorDescripcion(string descripcion)
+        {
+            return ProvinciasRepository.ObtenerProvinciasPorDescripcion(descripcion);
+        }
+
         #endregion
 
         #region Países
-        
+
         /// <summary>
         /// Obtiene los Países
         /// </summary>
@@ -48,6 +74,11 @@ namespace AgenciaViajes.Library.Logic
         public static List<PaisModel> ObtenerPaisesTodas()
         {
             return PaisesRepository.ObtenerPaises();
+        }
+
+        public static List<PaisModel> ObtenerPaisesPorDescripcion(string descripcion)
+        {
+            return PaisesRepository.ObtenerPaisesPorDescripcion(descripcion);
         }
         
         #endregion

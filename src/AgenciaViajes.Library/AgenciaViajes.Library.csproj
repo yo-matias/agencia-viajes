@@ -64,6 +64,7 @@
     <Compile Include="2_DataAccess\ProvinciasRepository.cs" />
     <Compile Include="3_Logic\LocalidadLogic.cs" />
     <Compile Include="3_Logic\NacionalidadLogic.cs" />
+    <Compile Include="DTO\LocalidadDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -74,5 +75,6 @@
       <Version>6.0.1</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -40,5 +40,17 @@ namespace AgenciaViajes.Library.DataAccess
             //TODO: Ver implementación de InsertarPais
             throw new NotImplementedException();
         }
+
+        public static List<PaisModel> ObtenerPaisesPorDescripcion(string descripcion)
+        {
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(ConnectionString))
+            {
+                var parametros = new DynamicParameters();
+                parametros.Add("@Descripcion", descripcion);
+
+                var output = connection.Query<PaisModel>("[dbo].[spPaises_ObtenerPorDescripcion]", parametros, commandType: CommandType.StoredProcedure).ToList();
+                return output;
+            }
+        }
     }
 }
