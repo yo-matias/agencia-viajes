@@ -13,8 +13,8 @@
     </RootPath>
     <RootNamespace>AgenciaViajes.DB</RootNamespace>
     <AssemblyName>AgenciaViajes.DB</AssemblyName>
-    <ModelCollation>1033, CI</ModelCollation>
-    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <TargetLanguage>CS</TargetLanguage>
@@ -22,6 +22,8 @@
     <SqlServerVerification>False</SqlServerVerification>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -56,5 +58,21 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Tables\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\Paises.sql" />
+    <Build Include="Tables\Provincias.sql" />
+    <Build Include="Tables\Ciudades.sql" />
+    <Build Include="Tables\FormasDePago.sql" />
+    <Build Include="Tables\Lugares.sql" />
+    <Build Include="Tables\TiposPaquete.sql" />
+    <Build Include="Tables\TiposDocumento.sql" />
+    <Build Include="Tables\TiposCliente.sql" />
+    <Build Include="Tables\Paquetes.sql" />
+    <Build Include="Tables\Clientes.sql" />
+    <Build Include="Tables\Clientes_X_TiposDocumento.sql" />
+    <Build Include="Tables\Facturas.sql" />
+    <Build Include="Tables\DetallesFactura.sql" />
   </ItemGroup>
 </Project>
