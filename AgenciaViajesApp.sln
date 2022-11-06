@@ -25,6 +25,7 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "AgenciaViajes.DB", "src\Age
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{18A1E1D7-E159-4AC1-B539-B7A10408F673}"
 	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
 		README.md = README.md
 	EndProjectSection
 EndProject
