@@ -60,6 +60,8 @@
     <Folder Include="Properties" />
     <Folder Include="Tables\" />
     <Folder Include="Security\" />
+    <Folder Include="AltaInicial" />
+    <Folder Include="Stored Procedures\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Paises.sql" />
@@ -78,8 +80,19 @@
     <Build Include="Tables\Contraseñas.sql" />
     <Build Include="Tables\Usuarios.sql" />
     <Build Include="Security\seguridad.sql" />
+    <Build Include="Stored Procedures\spLimpiarTodasLasTablas.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="AltaInicial_Paises.sql" />
+    <None Include="AltaInicial\AltaInicial_Localidades.sql" />
+    <None Include="AltaInicial\AltaInicial_TiposDeDocumento.sql" />
+    <None Include="AltaInicial\AltaInicial_TiposDeClientes.sql" />
+    <None Include="AltaInicial\AltaInicial_FormasDePago.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ArtifactReference Include="$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\130\SqlSchemas\master.dacpac">
+      <HintPath>$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\130\SqlSchemas\master.dacpac</HintPath>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseVariableLiteralValue>master</DatabaseVariableLiteralValue>
+    </ArtifactReference>
   </ItemGroup>
 </Project>
