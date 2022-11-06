@@ -28,6 +28,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgenciaViajes.Consola", "src\AgenciaViajes.Consola\AgenciaViajes.Consola.csproj", "{13892EF1-5AC0-41D5-AB33-6ADF98028C4E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,6 +58,10 @@ Global
 		{5C372E42-D979-4674-9A18-8361A7100A4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C372E42-D979-4674-9A18-8361A7100A4E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5C372E42-D979-4674-9A18-8361A7100A4E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{13892EF1-5AC0-41D5-AB33-6ADF98028C4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13892EF1-5AC0-41D5-AB33-6ADF98028C4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13892EF1-5AC0-41D5-AB33-6ADF98028C4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13892EF1-5AC0-41D5-AB33-6ADF98028C4E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -66,6 +72,7 @@ Global
 		{C5B2D644-858E-44BB-84EF-2F7355EDB655} = {38464196-53B0-4D8E-BA8E-82B8E3649432}
 		{942DC734-1A15-4B39-BE88-33D89492FA2B} = {CDDD5D84-A268-427E-AA32-252FD809482A}
 		{5C372E42-D979-4674-9A18-8361A7100A4E} = {CD455B90-C70B-4567-BC21-BBD58BA2A400}
+		{13892EF1-5AC0-41D5-AB33-6ADF98028C4E} = {CDDD5D84-A268-427E-AA32-252FD809482A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4DC92A9A-5E83-4165-AFB5-5810350214CD}
