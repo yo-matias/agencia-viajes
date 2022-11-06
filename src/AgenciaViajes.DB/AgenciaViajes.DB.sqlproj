@@ -59,6 +59,7 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="Tables\" />
+    <Folder Include="Security\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Paises.sql" />
@@ -74,5 +75,11 @@
     <Build Include="Tables\Clientes_X_TiposDocumento.sql" />
     <Build Include="Tables\Facturas.sql" />
     <Build Include="Tables\DetallesFactura.sql" />
+    <Build Include="Tables\Contraseñas.sql" />
+    <Build Include="Tables\Usuarios.sql" />
+    <Build Include="Security\seguridad.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AltaInicial_Paises.sql" />
   </ItemGroup>
 </Project>

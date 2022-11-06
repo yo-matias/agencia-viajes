@@ -1,12 +1,14 @@
 ﻿CREATE TABLE [dbo].[Paquetes] (
-    [IdPaquete]     INT            NOT NULL,
-    [NombrePaquete] VARCHAR (60)   NULL,
-    [Precio]        DECIMAL (8, 2) NULL,
-    [Duracion]      INT            NULL,
-    [FechaSalida]   DATETIME       NULL,
-    [Vigente]       BIT            NULL,
+    [IdPaquete]     INT            IDENTITY (1, 1) NOT NULL,
+    [NombrePaquete] VARCHAR (60)   NOT NULL,
+    [Precio]        DECIMAL (8, 2) NOT NULL,
+    [Duracion]      INT            NOT NULL,
+    [FechaSalida]   DATETIME       NOT NULL,
+    [Vigente]       BIT            NOT NULL,
     [IdTipoPaquete] INT            NOT NULL,
     CONSTRAINT [PK_Paquetes] PRIMARY KEY CLUSTERED ([IdPaquete] ASC),
     CONSTRAINT [FK_Paquetes_TiposPaquete] FOREIGN KEY ([IdTipoPaquete]) REFERENCES [dbo].[TiposPaquete] ([IdTipoPaquete])
 );
+
+
 

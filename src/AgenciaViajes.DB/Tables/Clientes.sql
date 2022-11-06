@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [dbo].[Clientes] (
-    [IdCliente]       INT          NOT NULL,
+    [IdCliente]       INT          IDENTITY (1, 1) NOT NULL,
     [IdCiudad]        INT          NOT NULL,
     [Calle]           VARCHAR (60) NULL,
     [NroCalle]        INT          NULL,
@@ -12,4 +12,6 @@
     CONSTRAINT [FK_Clientes_Ciudades] FOREIGN KEY ([IdCiudad]) REFERENCES [dbo].[Ciudades] ([IdCiudad]),
     CONSTRAINT [FK_Clientes_TiposCliente] FOREIGN KEY ([IdTipoCliente]) REFERENCES [dbo].[TiposCliente] ([IdTipoCliente])
 );
+
+
 
