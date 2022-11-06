@@ -11,6 +11,14 @@
             Contraseñas = new HashSet<ContraseñaModel>();
         }
 
+        public UsuarioModel(int id, string usuario, string nombre, ICollection<ContraseñaModel> contraseñas)
+        {
+            Id = id;
+            Usuario = usuario;
+            Nombre = nombre;
+            Contraseñas = contraseñas;
+        }
+
         public int Id { get; set; }
 
         [Required]

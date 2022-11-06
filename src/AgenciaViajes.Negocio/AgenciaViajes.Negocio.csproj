@@ -52,7 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Localidades\LocalidadLogica.cs" />
-    <Compile Include="Localidades\SeguridadLogica.cs" />
+    <Compile Include="Seguridad\SeguridadLogica.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

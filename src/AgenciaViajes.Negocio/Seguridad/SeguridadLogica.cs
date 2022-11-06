@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AgenciaViajes.Negocio.Localidades
+namespace AgenciaViajes.Negocio.Seguridad
 {
     public static class SeguridadLogica
     {
@@ -23,6 +23,12 @@ namespace AgenciaViajes.Negocio.Localidades
             }
 
             return false;
+        }
+
+        public static void CrearUsuario(UsuarioModel usuario)
+        {
+
+            throw new NotImplementedException();
         }
 
         private static ContraseñaModel ObtenerContraseñaVigente(UsuarioModel usuario)
