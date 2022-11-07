@@ -29,5 +29,15 @@ namespace AgenciaViajes.Datos
                 context.SaveChanges();
             }
         }
+
+        public static void ActualizarUsuario(UsuarioModel usuario)
+        {
+            using (var context = new EntidadesDb())
+            {
+                var entidad = context.Usuarios.Find(usuario.Id);
+                context.Entry(entidad).CurrentValues.SetValues(usuario);
+                context.SaveChanges();
+            }
+        }
     }
 }

@@ -71,6 +71,7 @@
     <Compile Include="DbContext\Mapeo\ClientesMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositorios\ContraseñaRepositorio.cs" />
+    <Compile Include="Repositorios\FacturacionRepositorio.cs" />
     <Compile Include="Repositorios\PaisesRepositorio.cs" />
     <Compile Include="Repositorios\UsuariosRepositorio.cs" />
   </ItemGroup>

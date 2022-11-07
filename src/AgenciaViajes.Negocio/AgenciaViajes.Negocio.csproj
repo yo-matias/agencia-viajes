@@ -51,7 +51,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Facturacion\FacturacionLogica.cs" />
     <Compile Include="Localidades\LocalidadLogica.cs" />
+    <Compile Include="Paquetes\PaquetesLogica.cs" />
     <Compile Include="Seguridad\SeguridadLogica.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

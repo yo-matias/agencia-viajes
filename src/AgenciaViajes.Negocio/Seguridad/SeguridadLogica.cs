@@ -25,12 +25,21 @@ namespace AgenciaViajes.Negocio.Seguridad
             return false;
         }
 
-        public static void CrearUsuario(UsuarioModel usuario)
+        public static void ActualizarUsuario(UsuarioModel usuario)
         {
-
-            throw new NotImplementedException();
+            UsuariosRepositorio.ActualizarUsuario(usuario);
         }
 
+        public static void CrearUsuario(UsuarioModel usuario)
+        {
+            UsuariosRepositorio.CrearUsuario(usuario);
+        }
+
+        public static UsuarioModel ObtenerUsuario(string usuario)
+        {
+            var output = UsuariosRepositorio.ObtenerUsuario(usuario);
+            return output;
+        }
         private static ContraseñaModel ObtenerContraseñaVigente(UsuarioModel usuario)
         {
             var contraseña = usuario.Contraseñas.OrderByDescending(c => c.Id)
