@@ -31,9 +31,9 @@ namespace AgenciaViajes.Win
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
+         
             this.lblUsuarioLogueado = new System.Windows.Forms.Label();
-            this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
+          
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
@@ -42,7 +42,7 @@ namespace AgenciaViajes.Win
             this.button1 = new System.Windows.Forms.Button();
             this.pnlMain = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
+           
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,27 +50,12 @@ namespace AgenciaViajes.Win
             // 
             this.panel1.BackColor = System.Drawing.Color.Gainsboro;
             this.panel1.Controls.Add(this.lblUsuarioLogueado);
-            this.panel1.Controls.Add(this.bunifuPictureBox1);
+           
             this.panel1.Location = new System.Drawing.Point(2, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(170, 161);
             this.panel1.TabIndex = 0;
-            // 
-            // bunifuPictureBox1
-            // 
-            this.bunifuPictureBox1.AllowFocused = false;
-            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox1.AutoSizeHeight = true;
-            this.bunifuPictureBox1.BorderRadius = 45;
-            this.bunifuPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox1.Image")));
-            this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(37, 10);
-            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
-            this.bunifuPictureBox1.Size = new System.Drawing.Size(90, 90);
-            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox1.TabIndex = 0;
-            this.bunifuPictureBox1.TabStop = false;
-            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+         
             // 
             // lblUsuarioLogueado
             // 
@@ -81,21 +66,7 @@ namespace AgenciaViajes.Win
             this.lblUsuarioLogueado.Size = new System.Drawing.Size(124, 16);
             this.lblUsuarioLogueado.TabIndex = 1;
             this.lblUsuarioLogueado.Text = "Usuario Logueado";
-            // 
-            // bunifuSeparator1
-            // 
-            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator1.BackgroundImage")));
-            this.bunifuSeparator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuSeparator1.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Flat;
-            this.bunifuSeparator1.LineColor = System.Drawing.Color.Silver;
-            this.bunifuSeparator1.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
-            this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(2, 169);
-            this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
-            this.bunifuSeparator1.Size = new System.Drawing.Size(170, 14);
-            this.bunifuSeparator1.TabIndex = 1;
+          
             // 
             // panel2
             // 
@@ -194,13 +165,13 @@ namespace AgenciaViajes.Win
             this.ControlBox = false;
             this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.bunifuSeparator1);
+           
             this.Controls.Add(this.panel1);
             this.Name = "Principal";
             this.ShowIcon = false;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
+         
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -209,9 +180,9 @@ namespace AgenciaViajes.Win
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
+      
         private System.Windows.Forms.Label lblUsuarioLogueado;
-        private Bunifu.UI.WinForms.BunifuSeparator bunifuSeparator1;
+      
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnFacturas;
