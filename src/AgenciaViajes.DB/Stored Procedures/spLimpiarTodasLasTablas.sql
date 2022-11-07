@@ -11,14 +11,14 @@ BEGIN
 	SET NOCOUNT ON;
 
 	-- disable all constraints
-	EXEC sp_MSForEachTable "ALTER TABLE ? NOCHECK CONSTRAINT all"
+	EXEC sp_MSforeachtable "ALTER TABLE ? NOCHECK CONSTRAINT all"
 
 	-- delete data in all tables
-	EXEC sp_MSForEachTable "DELETE FROM ?"
+	EXEC sp_MSforeachtable "DELETE FROM ?"
 
 	-- reseeds identity fields
-	EXEC sp_MSForEachTable "DBCC CHECKIDENT ( '?', RESEED, 0)"
+	EXEC sp_MSforeachtable "DBCC CHECKIDENT ( '?', RESEED, 0)"
 
 	-- enable all constraints
-	exec sp_MSForEachTable "ALTER TABLE ? WITH CHECK CHECK CONSTRAINT all"
+	exec sp_MSforeachtable "ALTER TABLE ? WITH CHECK CHECK CONSTRAINT all"
 END
