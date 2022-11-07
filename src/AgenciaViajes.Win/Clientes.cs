@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AgenciaViajes.Win
 {
-    public partial class Login : Form
+    public partial class Clientes : Form
     {
-        public Login()
+        public Clientes()
         {
             InitializeComponent();
         }
@@ -21,5 +21,7 @@ namespace AgenciaViajes.Win
         {
             this.Dispose();
         }
+
+       
     }
 }

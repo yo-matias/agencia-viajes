@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace AgenciaViajes.Win
 {
-    public partial class Login : Form
+    public partial class Dashboard : Form
     {
-        public Login()
+        public Dashboard()
         {
             InitializeComponent();
-        }
-
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-            this.Dispose();
         }
     }
 }
