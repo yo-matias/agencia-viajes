@@ -10,6 +10,10 @@ namespace AgenciaViajes.Negocio.Localidades
 {
     public static class LocalidadLogica
     {
+        /// <summary>
+        /// Obtiene la información de todos los países
+        /// </summary>
+        /// <returns>Lista de Información de Países</returns>
         public static List<PaisModel> ObtenerPaises()
         {
             var paises = PaisesRepositorio.ObtenerPaises();
