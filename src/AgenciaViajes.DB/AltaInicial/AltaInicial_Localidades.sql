@@ -1,15 +1,4 @@
-﻿USE [bd_AgenciaViajes]
-GO
-
-DECLARE @IdPais INT;
-DECLARE @IdProvincia INT;
-
--- Limpieza previos
-/*
-TRUNCATE TABLE [dbo].[Ciudades];
-TRUNCATE TABLE [dbo].[Provincias];
-TRUNCATE TABLE [dbo].[Paises];
-*/
+﻿DECLARE @IdPais INT, @IdProvincia INT;
 
 -- Argentina
 INSERT INTO [dbo].[Paises] ([Pais]) VALUES ('Argentina');

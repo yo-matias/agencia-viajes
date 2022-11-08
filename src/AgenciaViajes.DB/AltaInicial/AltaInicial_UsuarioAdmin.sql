@@ -1,7 +1,4 @@
-﻿USE [bd_AgenciaViajes]
-GO
-
-DECLARE @Id int;
+﻿DECLARE @Id int;
 
 INSERT INTO [seguridad].[Usuarios] ([Usuario],[Nombre])
 	VALUES ('admin','Administrador');
