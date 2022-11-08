@@ -15,7 +15,7 @@ namespace AgenciaViajes.Datos
             
             using (var context = new EntidadesDb())
             {
-                output = context.Usuarios.Where(u => u.Usuario == usuario).FirstOrDefault();
+                output = context.Usuarios.Include("Contraseñas").FirstOrDefault(c => c.Usuario == usuario);
             }
 
             return output;
