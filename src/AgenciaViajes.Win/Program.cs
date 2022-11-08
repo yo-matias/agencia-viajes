@@ -11,13 +11,26 @@ namespace AgenciaViajes.Win
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
-        /// Test comentario daniel
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Principal());
+
+            // Integración con pantalla de inicio de sesión
+            /*
+            Login frmLogin = new Login();
+            // Si el formulario retorna éxito, inicio menú principal
+            if (frmLogin.ShowDialog() == DialogResult.OK)
+            {
+                Application.Run(new Principal());
+            }
+            else
+            {
+                Application.Exit();
+            }
+            */
         }
     }
 }

@@ -29,58 +29,82 @@ namespace AgenciaViajes.Win
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.llblRegistrarse = new System.Windows.Forms.LinkLabel();
+            this.panelLogo = new System.Windows.Forms.Panel();
+            this.imgInicio = new System.Windows.Forms.PictureBox();
+            this.panelCredenciales = new System.Windows.Forms.Panel();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.lblRegistrarse = new System.Windows.Forms.LinkLabel();
             this.btnIngresar = new System.Windows.Forms.Button();
             this.txtContrasenia = new System.Windows.Forms.TextBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.imgInicio = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.lblContrasenia = new System.Windows.Forms.Label();
+            this.lblUsuario = new System.Windows.Forms.Label();
+            this.pictureBoxUsuario = new System.Windows.Forms.PictureBox();
+            this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgInicio)).BeginInit();
+            this.panelCredenciales.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUsuario)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // panelLogo
             // 
-            this.panel1.Controls.Add(this.imgInicio);
-            this.panel1.Location = new System.Drawing.Point(0, -1);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(393, 374);
-            this.panel1.TabIndex = 0;
+            this.panelLogo.Controls.Add(this.imgInicio);
+            this.panelLogo.Location = new System.Drawing.Point(0, -1);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(393, 374);
+            this.panelLogo.TabIndex = 0;
             // 
-            // panel2
+            // imgInicio
             // 
-            this.panel2.Controls.Add(this.btnSalir);
-            this.panel2.Controls.Add(this.llblRegistrarse);
-            this.panel2.Controls.Add(this.btnIngresar);
-            this.panel2.Controls.Add(this.txtContrasenia);
-            this.panel2.Controls.Add(this.txtUsuario);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Location = new System.Drawing.Point(397, 1);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(378, 372);
-            this.panel2.TabIndex = 1;
+            this.imgInicio.ErrorImage = null;
+            this.imgInicio.Image = global::AgenciaViajes.Win.Properties.Resources.logo;
+            this.imgInicio.InitialImage = null;
+            this.imgInicio.Location = new System.Drawing.Point(0, 3);
+            this.imgInicio.Name = "imgInicio";
+            this.imgInicio.Size = new System.Drawing.Size(393, 371);
+            this.imgInicio.TabIndex = 0;
+            this.imgInicio.TabStop = false;
             // 
-            // llblRegistrarse
+            // panelCredenciales
             // 
-            this.llblRegistrarse.ActiveLinkColor = System.Drawing.Color.Blue;
-            this.llblRegistrarse.AutoSize = true;
-            this.llblRegistrarse.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.llblRegistrarse.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.llblRegistrarse.Location = new System.Drawing.Point(122, 319);
-            this.llblRegistrarse.Name = "llblRegistrarse";
-            this.llblRegistrarse.Size = new System.Drawing.Size(151, 16);
-            this.llblRegistrarse.TabIndex = 6;
-            this.llblRegistrarse.TabStop = true;
-            this.llblRegistrarse.Text = "¿No estas registrado?";
+            this.panelCredenciales.Controls.Add(this.btnSalir);
+            this.panelCredenciales.Controls.Add(this.lblRegistrarse);
+            this.panelCredenciales.Controls.Add(this.btnIngresar);
+            this.panelCredenciales.Controls.Add(this.txtContrasenia);
+            this.panelCredenciales.Controls.Add(this.txtUsuario);
+            this.panelCredenciales.Controls.Add(this.lblContrasenia);
+            this.panelCredenciales.Controls.Add(this.lblUsuario);
+            this.panelCredenciales.Controls.Add(this.pictureBoxUsuario);
+            this.panelCredenciales.Location = new System.Drawing.Point(397, 1);
+            this.panelCredenciales.Name = "panelCredenciales";
+            this.panelCredenciales.Size = new System.Drawing.Size(378, 372);
+            this.panelCredenciales.TabIndex = 1;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.Color.LightCoral;
+            this.btnSalir.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Location = new System.Drawing.Point(335, 11);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(31, 27);
+            this.btnSalir.TabIndex = 7;
+            this.btnSalir.Text = "X";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
+            // 
+            // lblRegistrarse
+            // 
+            this.lblRegistrarse.ActiveLinkColor = System.Drawing.Color.Blue;
+            this.lblRegistrarse.AutoSize = true;
+            this.lblRegistrarse.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRegistrarse.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.lblRegistrarse.Location = new System.Drawing.Point(122, 319);
+            this.lblRegistrarse.Name = "lblRegistrarse";
+            this.lblRegistrarse.Size = new System.Drawing.Size(150, 16);
+            this.lblRegistrarse.TabIndex = 6;
+            this.lblRegistrarse.TabStop = true;
+            this.lblRegistrarse.Text = "¿No estas registrado?";
+            this.lblRegistrarse.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LblRegistrarse_LinkClicked);
             // 
             // btnIngresar
             // 
@@ -93,6 +117,7 @@ namespace AgenciaViajes.Win
             this.btnIngresar.TabIndex = 5;
             this.btnIngresar.Text = "INGRESAR";
             this.btnIngresar.UseVisualStyleBackColor = false;
+            this.btnIngresar.Click += new System.EventHandler(this.BtnIngresar_Click);
             // 
             // txtContrasenia
             // 
@@ -110,59 +135,36 @@ namespace AgenciaViajes.Win
             this.txtUsuario.Size = new System.Drawing.Size(131, 20);
             this.txtUsuario.TabIndex = 3;
             // 
-            // label2
+            // lblContrasenia
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(36, 232);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 16);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Contraseña";
+            this.lblContrasenia.AutoSize = true;
+            this.lblContrasenia.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContrasenia.ForeColor = System.Drawing.Color.DimGray;
+            this.lblContrasenia.Location = new System.Drawing.Point(36, 232);
+            this.lblContrasenia.Name = "lblContrasenia";
+            this.lblContrasenia.Size = new System.Drawing.Size(82, 16);
+            this.lblContrasenia.TabIndex = 2;
+            this.lblContrasenia.Text = "Contraseña";
             // 
-            // label1
+            // lblUsuario
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(63, 193);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 16);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Usuario";
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.ForeColor = System.Drawing.Color.DimGray;
+            this.lblUsuario.Location = new System.Drawing.Point(63, 193);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(55, 16);
+            this.lblUsuario.TabIndex = 1;
+            this.lblUsuario.Text = "Usuario";
             // 
-            // btnSalir
+            // pictureBoxUsuario
             // 
-            this.btnSalir.BackColor = System.Drawing.Color.LightCoral;
-            this.btnSalir.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(335, 11);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(31, 27);
-            this.btnSalir.TabIndex = 7;
-            this.btnSalir.Text = "X";
-            this.btnSalir.UseVisualStyleBackColor = false;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::AgenciaViajes.Win.Properties.Resources.usuario;
-            this.pictureBox1.Location = new System.Drawing.Point(125, 27);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(131, 132);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // imgInicio
-            // 
-            this.imgInicio.ErrorImage = null;
-            this.imgInicio.Image = global::AgenciaViajes.Win.Properties.Resources.logo;
-            this.imgInicio.InitialImage = null;
-            this.imgInicio.Location = new System.Drawing.Point(0, 3);
-            this.imgInicio.Name = "imgInicio";
-            this.imgInicio.Size = new System.Drawing.Size(393, 371);
-            this.imgInicio.TabIndex = 0;
-            this.imgInicio.TabStop = false;
+            this.pictureBoxUsuario.Image = global::AgenciaViajes.Win.Properties.Resources.usuario;
+            this.pictureBoxUsuario.Location = new System.Drawing.Point(125, 27);
+            this.pictureBoxUsuario.Name = "pictureBoxUsuario";
+            this.pictureBoxUsuario.Size = new System.Drawing.Size(131, 132);
+            this.pictureBoxUsuario.TabIndex = 0;
+            this.pictureBoxUsuario.TabStop = false;
             // 
             // Login
             // 
@@ -170,31 +172,31 @@ namespace AgenciaViajes.Win
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(775, 375);
             this.ControlBox = false;
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelCredenciales);
+            this.Controls.Add(this.panelLogo);
             this.Name = "Login";
             this.ShowIcon = false;
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.imgInicio)).EndInit();
+            this.panelCredenciales.ResumeLayout(false);
+            this.panelCredenciales.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUsuario)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.PictureBox imgInicio;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelCredenciales;
         private System.Windows.Forms.TextBox txtContrasenia;
         private System.Windows.Forms.TextBox txtUsuario;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblContrasenia;
+        private System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.PictureBox pictureBoxUsuario;
         private System.Windows.Forms.Button btnIngresar;
-        private System.Windows.Forms.LinkLabel llblRegistrarse;
+        private System.Windows.Forms.LinkLabel lblRegistrarse;
         private System.Windows.Forms.Button btnSalir;
     }
 }
