@@ -19,7 +19,7 @@ namespace AgenciaViajes.Negocio.Seguridad
         public static bool ValidarUsuario(string usuario, string contraseña)
         {
             var usuarioDB = UsuariosRepositorio.ObtenerUsuario(usuario);
-            if (usuario != null)
+            if (usuarioDB != null)
             {
                 var contraseñaDB = ObtenerContraseñaVigente(usuarioDB);
                 if (contraseñaDB.Contraseña == contraseña)
@@ -67,9 +67,15 @@ namespace AgenciaViajes.Negocio.Seguridad
         /// <returns>Información de la Contraseña vigente</returns>
         private static ContraseñaModel ObtenerContraseñaVigente(UsuarioModel usuario)
         {
-            var contraseña = usuario.Contraseñas.OrderByDescending(c => c.Id)
-                                                .Where(c => c.FechaVencimiento >= DateTime.Today)
-                                                .FirstOrDefault();
+            var contraseña = new ContraseñaModel();
+            
+            if (usuario.Contraseñas.Any())
+            {
+                contraseña = usuario.Contraseñas.Where(c => c.FechaVencimiento >= DateTime.Today)
+                                                    .DefaultIfEmpty()
+                                                    .OrderByDescending(c => c.Id)
+                                                    .FirstOrDefault();
+            }
             return contraseña;
         }
     }
