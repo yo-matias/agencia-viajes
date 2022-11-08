@@ -1,6 +1,6 @@
 ﻿-- =============================================
 -- Author:		Matías F
--- Create date: 06/11/2022
+-- Create date: 07/11/2022
 -- Description:	Elimina todos los registros de todas las tablas
 -- =============================================
 CREATE PROCEDURE spLimpiarTodasLasTablas
@@ -11,14 +11,14 @@ BEGIN
 	SET NOCOUNT ON;
 
 	-- disable all constraints
-	EXEC sp_MSforeachtable "ALTER TABLE ? NOCHECK CONSTRAINT all"
+	EXEC sp_MSforeachtable "ALTER TABLE ? NOCHECK CONSTRAINT all";
 
 	-- delete data in all tables
-	EXEC sp_MSforeachtable "DELETE FROM ?"
+	EXEC sp_MSforeachtable "DELETE FROM ?";
 
-	-- reseeds identity fields
-	EXEC sp_MSforeachtable "DBCC CHECKIDENT ( '?', RESEED, 0)"
+	-- reseeds identity fields to 1
+	EXEC sp_MSforeachtable "DBCC CHECKIDENT ( '?', RESEED, 1)";
 
 	-- enable all constraints
-	exec sp_MSforeachtable "ALTER TABLE ? WITH CHECK CHECK CONSTRAINT all"
+	exec sp_MSforeachtable "ALTER TABLE ? WITH CHECK CHECK CONSTRAINT all";
 END

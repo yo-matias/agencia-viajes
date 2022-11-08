@@ -81,6 +81,7 @@
     <Build Include="Tables\Usuarios.sql" />
     <Build Include="Security\seguridad.sql" />
     <Build Include="Stored Procedures\spLimpiarTodasLasTablas.sql" />
+    <None Include="AltaInicial\AltaInicial_UsuarioAdmin.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="AltaInicial\AltaInicial_Localidades.sql" />

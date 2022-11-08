@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [seguridad].[Contraseñas] (
-    [Id]               INT           NOT NULL,
+    [Id]               INT        IDENTITY (1, 1)   NOT NULL,
     [IdUsuario]        INT           NOT NULL,
     [Contraseña]       VARCHAR (256) NOT NULL,
     [FechaVencimiento] DATETIME      NOT NULL,
