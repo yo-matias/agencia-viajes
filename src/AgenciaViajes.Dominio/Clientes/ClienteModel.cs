@@ -1,8 +1,8 @@
 namespace AgenciaViajes.Dominio
 {
+    using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
-    using System.ComponentModel.DataAnnotations.Schema;
 
     public partial class ClienteModel
     {
@@ -34,10 +34,16 @@ namespace AgenciaViajes.Dominio
         [StringLength(60)]
         public string Nacionalidad { get; set; }
 
+        public bool Habilitado { get; set; }
+
+        public DateTime FechaAlta { get; set; }
+
+        public DateTime? FechaBaja { get; set; }
+
         public virtual CiudadModel Ciudades { get; set; }
 
         public virtual TipoDeClienteModel TiposCliente { get; set; }
-        
+
         public virtual ICollection<FacturaModel> Facturas { get; set; }
     }
 }
