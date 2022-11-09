@@ -30,59 +30,69 @@ namespace AgenciaViajes.Win
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblTitulo = new System.Windows.Forms.Label();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
             this.gbxAltaCliente = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.rbtParticular = new System.Windows.Forms.RadioButton();
-            this.rbtCorporativo = new System.Windows.Forms.RadioButton();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnAgregar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.bd_AgenciaViajesDataSet = new AgenciaViajes.Win.bd_AgenciaViajesDataSet();
-            this.bdAgenciaViajesDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.lblPais = new System.Windows.Forms.Label();
+            this.lblProvincia = new System.Windows.Forms.Label();
+            this.comboTipoDocumento = new System.Windows.Forms.ComboBox();
+            this.tipoDeDocumentoModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.comboTipoCliente = new System.Windows.Forms.ComboBox();
+            this.tipoDeClienteModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.comboCiudad = new System.Windows.Forms.ComboBox();
+            this.ciudadModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.comboProvincia = new System.Windows.Forms.ComboBox();
+            this.provinciaModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.txtCUIT = new System.Windows.Forms.TextBox();
+            this.txtDNI = new System.Windows.Forms.TextBox();
+            this.lblTipoDocumento = new System.Windows.Forms.Label();
+            this.lblTipoCliente = new System.Windows.Forms.Label();
+            this.lblCUIT = new System.Windows.Forms.Label();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.txtCalleNro = new System.Windows.Forms.TextBox();
+            this.txtCalle = new System.Windows.Forms.TextBox();
+            this.comboPais = new System.Windows.Forms.ComboBox();
+            this.paisModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.txtRazonSocial = new System.Windows.Forms.TextBox();
+            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.lblDNI = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.lblTelefono = new System.Windows.Forms.Label();
+            this.lblCalleNro = new System.Windows.Forms.Label();
+            this.lblCalle = new System.Windows.Forms.Label();
+            this.lblCiudad = new System.Windows.Forms.Label();
+            this.lblNacionalidad = new System.Windows.Forms.Label();
+            this.lblRazonSocial = new System.Windows.Forms.Label();
+            this.lblApellido = new System.Windows.Forms.Label();
+            this.gridClientes = new System.Windows.Forms.DataGridView();
             this.btnEditar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.ELIMINAR = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.comboNacionalidad = new System.Windows.Forms.ComboBox();
+            this.nacionalidadModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gbxAltaCliente.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bd_AgenciaViajesDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bdAgenciaViajesDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tipoDeDocumentoModelBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tipoDeClienteModelBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ciudadModelBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.provinciaModelBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.paisModelBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridClientes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nacionalidadModelBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lblTitulo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(257, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 32);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "CLIENTES";
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.Color.DimGray;
+            this.lblTitulo.Location = new System.Drawing.Point(257, 12);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(148, 32);
+            this.lblTitulo.TabIndex = 0;
+            this.lblTitulo.Text = "CLIENTES";
             // 
             // btnSalir
             // 
@@ -94,50 +104,52 @@ namespace AgenciaViajes.Win
             this.btnSalir.TabIndex = 8;
             this.btnSalir.Text = "X";
             this.btnSalir.UseVisualStyleBackColor = false;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            this.btnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
-            // label2
+            // lblNombre
             // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(20, 50);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 16);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Nombre :";
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.ForeColor = System.Drawing.Color.DimGray;
+            this.lblNombre.Location = new System.Drawing.Point(20, 50);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(67, 16);
+            this.lblNombre.TabIndex = 9;
+            this.lblNombre.Text = "Nombre :";
             // 
             // gbxAltaCliente
             // 
             this.gbxAltaCliente.BackColor = System.Drawing.Color.WhiteSmoke;
             this.gbxAltaCliente.Controls.Add(this.btnCancelar);
             this.gbxAltaCliente.Controls.Add(this.btnAgregar);
-            this.gbxAltaCliente.Controls.Add(this.label14);
-            this.gbxAltaCliente.Controls.Add(this.label13);
-            this.gbxAltaCliente.Controls.Add(this.comboBox3);
-            this.gbxAltaCliente.Controls.Add(this.comboBox2);
-            this.gbxAltaCliente.Controls.Add(this.textBox9);
-            this.gbxAltaCliente.Controls.Add(this.textBox8);
-            this.gbxAltaCliente.Controls.Add(this.label12);
-            this.gbxAltaCliente.Controls.Add(this.rbtCorporativo);
-            this.gbxAltaCliente.Controls.Add(this.rbtParticular);
-            this.gbxAltaCliente.Controls.Add(this.textBox7);
-            this.gbxAltaCliente.Controls.Add(this.textBox6);
-            this.gbxAltaCliente.Controls.Add(this.textBox5);
-            this.gbxAltaCliente.Controls.Add(this.textBox4);
-            this.gbxAltaCliente.Controls.Add(this.comboBox1);
-            this.gbxAltaCliente.Controls.Add(this.textBox3);
-            this.gbxAltaCliente.Controls.Add(this.textBox2);
-            this.gbxAltaCliente.Controls.Add(this.textBox1);
-            this.gbxAltaCliente.Controls.Add(this.label11);
+            this.gbxAltaCliente.Controls.Add(this.lblPais);
+            this.gbxAltaCliente.Controls.Add(this.lblProvincia);
+            this.gbxAltaCliente.Controls.Add(this.comboTipoDocumento);
+            this.gbxAltaCliente.Controls.Add(this.comboTipoCliente);
+            this.gbxAltaCliente.Controls.Add(this.comboNacionalidad);
+            this.gbxAltaCliente.Controls.Add(this.comboCiudad);
+            this.gbxAltaCliente.Controls.Add(this.comboProvincia);
+            this.gbxAltaCliente.Controls.Add(this.txtCUIT);
+            this.gbxAltaCliente.Controls.Add(this.txtDNI);
+            this.gbxAltaCliente.Controls.Add(this.lblTipoDocumento);
+            this.gbxAltaCliente.Controls.Add(this.lblTipoCliente);
+            this.gbxAltaCliente.Controls.Add(this.lblCUIT);
+            this.gbxAltaCliente.Controls.Add(this.txtTelefono);
+            this.gbxAltaCliente.Controls.Add(this.txtCalleNro);
+            this.gbxAltaCliente.Controls.Add(this.txtCalle);
+            this.gbxAltaCliente.Controls.Add(this.comboPais);
+            this.gbxAltaCliente.Controls.Add(this.txtRazonSocial);
+            this.gbxAltaCliente.Controls.Add(this.txtApellido);
+            this.gbxAltaCliente.Controls.Add(this.txtNombre);
+            this.gbxAltaCliente.Controls.Add(this.lblDNI);
             this.gbxAltaCliente.Controls.Add(this.label10);
-            this.gbxAltaCliente.Controls.Add(this.label9);
-            this.gbxAltaCliente.Controls.Add(this.label8);
-            this.gbxAltaCliente.Controls.Add(this.label7);
-            this.gbxAltaCliente.Controls.Add(this.label6);
-            this.gbxAltaCliente.Controls.Add(this.label5);
-            this.gbxAltaCliente.Controls.Add(this.label4);
-            this.gbxAltaCliente.Controls.Add(this.label3);
-            this.gbxAltaCliente.Controls.Add(this.label2);
+            this.gbxAltaCliente.Controls.Add(this.lblTelefono);
+            this.gbxAltaCliente.Controls.Add(this.lblCalleNro);
+            this.gbxAltaCliente.Controls.Add(this.lblCalle);
+            this.gbxAltaCliente.Controls.Add(this.lblCiudad);
+            this.gbxAltaCliente.Controls.Add(this.lblNacionalidad);
+            this.gbxAltaCliente.Controls.Add(this.lblRazonSocial);
+            this.gbxAltaCliente.Controls.Add(this.lblApellido);
+            this.gbxAltaCliente.Controls.Add(this.lblNombre);
             this.gbxAltaCliente.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbxAltaCliente.ForeColor = System.Drawing.Color.DimGray;
             this.gbxAltaCliente.Location = new System.Drawing.Point(71, 68);
@@ -146,259 +158,6 @@ namespace AgenciaViajes.Win
             this.gbxAltaCliente.TabIndex = 10;
             this.gbxAltaCliente.TabStop = false;
             this.gbxAltaCliente.Text = "Datos del Cliente";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(381, 47);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(131, 24);
-            this.comboBox1.TabIndex = 22;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(127, 105);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(131, 23);
-            this.textBox3.TabIndex = 21;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(127, 76);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(131, 23);
-            this.textBox2.TabIndex = 20;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(127, 47);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(131, 23);
-            this.textBox1.TabIndex = 19;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.ForeColor = System.Drawing.Color.DimGray;
-            this.label11.Location = new System.Drawing.Point(20, 166);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(42, 16);
-            this.label11.TabIndex = 18;
-            this.label11.Text = "DNI :";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.ForeColor = System.Drawing.Color.DimGray;
-            this.label10.Location = new System.Drawing.Point(20, 239);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(0, 16);
-            this.label10.TabIndex = 17;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.ForeColor = System.Drawing.Color.DimGray;
-            this.label9.Location = new System.Drawing.Point(20, 137);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(75, 16);
-            this.label9.TabIndex = 16;
-            this.label9.Text = "Teléfono :";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.ForeColor = System.Drawing.Color.DimGray;
-            this.label8.Location = new System.Drawing.Point(317, 169);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(58, 16);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "Altura :";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.Color.DimGray;
-            this.label7.Location = new System.Drawing.Point(325, 140);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(50, 16);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "Calle :";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.Color.DimGray;
-            this.label6.Location = new System.Drawing.Point(311, 110);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 16);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "Ciudad :";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.Color.DimGray;
-            this.label5.Location = new System.Drawing.Point(273, 198);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(101, 16);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Nacionalidad :";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.DimGray;
-            this.label4.Location = new System.Drawing.Point(20, 108);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 16);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Razón Social :";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.DimGray;
-            this.label3.Location = new System.Drawing.Point(20, 79);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 16);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Apellido :";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(381, 137);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(131, 23);
-            this.textBox4.TabIndex = 23;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(381, 166);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(131, 23);
-            this.textBox5.TabIndex = 24;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(127, 134);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(131, 23);
-            this.textBox6.TabIndex = 25;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(381, 195);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(131, 23);
-            this.textBox7.TabIndex = 26;
-            // 
-            // rbtParticular
-            // 
-            this.rbtParticular.AutoSize = true;
-            this.rbtParticular.Location = new System.Drawing.Point(23, 237);
-            this.rbtParticular.Name = "rbtParticular";
-            this.rbtParticular.Size = new System.Drawing.Size(88, 20);
-            this.rbtParticular.TabIndex = 27;
-            this.rbtParticular.TabStop = true;
-            this.rbtParticular.Text = "Particular";
-            this.rbtParticular.UseVisualStyleBackColor = true;
-            // 
-            // rbtCorporativo
-            // 
-            this.rbtCorporativo.AutoSize = true;
-            this.rbtCorporativo.Location = new System.Drawing.Point(127, 235);
-            this.rbtCorporativo.Name = "rbtCorporativo";
-            this.rbtCorporativo.Size = new System.Drawing.Size(102, 20);
-            this.rbtCorporativo.TabIndex = 28;
-            this.rbtCorporativo.TabStop = true;
-            this.rbtCorporativo.Text = "Corporativo";
-            this.rbtCorporativo.UseVisualStyleBackColor = true;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.ForeColor = System.Drawing.Color.DimGray;
-            this.label12.Location = new System.Drawing.Point(20, 195);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(51, 16);
-            this.label12.TabIndex = 29;
-            this.label12.Text = "CUIT :";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(127, 163);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(131, 23);
-            this.textBox8.TabIndex = 30;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(127, 192);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(131, 23);
-            this.textBox9.TabIndex = 31;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(381, 77);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(131, 24);
-            this.comboBox2.TabIndex = 32;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(381, 107);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(131, 24);
-            this.comboBox3.TabIndex = 33;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.ForeColor = System.Drawing.Color.DimGray;
-            this.label13.Location = new System.Drawing.Point(297, 80);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(78, 16);
-            this.label13.TabIndex = 34;
-            this.label13.Text = "Provincia :";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.ForeColor = System.Drawing.Color.DimGray;
-            this.label14.Location = new System.Drawing.Point(329, 50);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(45, 16);
-            this.label14.TabIndex = 35;
-            this.label14.Text = "País :";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.btnEditar,
-            this.ELIMINAR});
-            this.dataGridView1.DataSource = this.bdAgenciaViajesDataSetBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(74, 383);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(539, 204);
-            this.dataGridView1.TabIndex = 11;
-            // 
-            // btnAgregar
-            // 
-            this.btnAgregar.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnAgregar.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnAgregar.Location = new System.Drawing.Point(314, 230);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(95, 30);
-            this.btnAgregar.TabIndex = 36;
-            this.btnAgregar.Text = "AGREGAR";
-            this.btnAgregar.UseVisualStyleBackColor = false;
             // 
             // btnCancelar
             // 
@@ -411,16 +170,311 @@ namespace AgenciaViajes.Win
             this.btnCancelar.TabIndex = 37;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
-            // bd_AgenciaViajesDataSet
+            // btnAgregar
             // 
-            this.bd_AgenciaViajesDataSet.DataSetName = "bd_AgenciaViajesDataSet";
-            this.bd_AgenciaViajesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.btnAgregar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnAgregar.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnAgregar.Location = new System.Drawing.Point(314, 230);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(95, 30);
+            this.btnAgregar.TabIndex = 36;
+            this.btnAgregar.Text = "AGREGAR";
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
             // 
-            // bdAgenciaViajesDataSetBindingSource
+            // lblPais
             // 
-            this.bdAgenciaViajesDataSetBindingSource.DataSource = this.bd_AgenciaViajesDataSet;
-            this.bdAgenciaViajesDataSetBindingSource.Position = 0;
+            this.lblPais.AutoSize = true;
+            this.lblPais.ForeColor = System.Drawing.Color.DimGray;
+            this.lblPais.Location = new System.Drawing.Point(329, 50);
+            this.lblPais.Name = "lblPais";
+            this.lblPais.Size = new System.Drawing.Size(44, 16);
+            this.lblPais.TabIndex = 35;
+            this.lblPais.Text = "País :";
+            // 
+            // lblProvincia
+            // 
+            this.lblProvincia.AutoSize = true;
+            this.lblProvincia.ForeColor = System.Drawing.Color.DimGray;
+            this.lblProvincia.Location = new System.Drawing.Point(297, 80);
+            this.lblProvincia.Name = "lblProvincia";
+            this.lblProvincia.Size = new System.Drawing.Size(77, 16);
+            this.lblProvincia.TabIndex = 34;
+            this.lblProvincia.Text = "Provincia :";
+            // 
+            // comboTipoDocumento
+            // 
+            this.comboTipoDocumento.DataSource = this.tipoDeDocumentoModelBindingSource;
+            this.comboTipoDocumento.DisplayMember = "DescripcionTipoDocumento";
+            this.comboTipoDocumento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboTipoDocumento.FormattingEnabled = true;
+            this.comboTipoDocumento.Location = new System.Drawing.Point(127, 221);
+            this.comboTipoDocumento.Name = "comboTipoDocumento";
+            this.comboTipoDocumento.Size = new System.Drawing.Size(131, 24);
+            this.comboTipoDocumento.TabIndex = 33;
+            this.comboTipoDocumento.ValueMember = "IdTipoDocumento";
+            this.comboTipoDocumento.SelectionChangeCommitted += new System.EventHandler(this.ComboCiudad_SelectionChangeCommitted);
+            // 
+            // tipoDeDocumentoModelBindingSource
+            // 
+            this.tipoDeDocumentoModelBindingSource.DataSource = typeof(AgenciaViajes.Dominio.TipoDeDocumentoModel);
+            // 
+            // comboTipoCliente
+            // 
+            this.comboTipoCliente.DataSource = this.tipoDeClienteModelBindingSource;
+            this.comboTipoCliente.DisplayMember = "DescripcionTipoCliente";
+            this.comboTipoCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboTipoCliente.FormattingEnabled = true;
+            this.comboTipoCliente.Location = new System.Drawing.Point(127, 17);
+            this.comboTipoCliente.Name = "comboTipoCliente";
+            this.comboTipoCliente.Size = new System.Drawing.Size(131, 24);
+            this.comboTipoCliente.TabIndex = 33;
+            this.comboTipoCliente.ValueMember = "IdTipoCliente";
+            this.comboTipoCliente.SelectionChangeCommitted += new System.EventHandler(this.ComboCiudad_SelectionChangeCommitted);
+            // 
+            // tipoDeClienteModelBindingSource
+            // 
+            this.tipoDeClienteModelBindingSource.DataSource = typeof(AgenciaViajes.Dominio.TipoDeClienteModel);
+            // 
+            // comboCiudad
+            // 
+            this.comboCiudad.DataSource = this.ciudadModelBindingSource;
+            this.comboCiudad.DisplayMember = "Ciudad";
+            this.comboCiudad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboCiudad.FormattingEnabled = true;
+            this.comboCiudad.Location = new System.Drawing.Point(381, 107);
+            this.comboCiudad.Name = "comboCiudad";
+            this.comboCiudad.Size = new System.Drawing.Size(131, 24);
+            this.comboCiudad.TabIndex = 33;
+            this.comboCiudad.ValueMember = "IdCiudad";
+            this.comboCiudad.SelectionChangeCommitted += new System.EventHandler(this.ComboCiudad_SelectionChangeCommitted);
+            // 
+            // ciudadModelBindingSource
+            // 
+            this.ciudadModelBindingSource.DataSource = typeof(AgenciaViajes.Dominio.CiudadModel);
+            // 
+            // comboProvincia
+            // 
+            this.comboProvincia.DataSource = this.provinciaModelBindingSource;
+            this.comboProvincia.DisplayMember = "Provincia";
+            this.comboProvincia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboProvincia.FormattingEnabled = true;
+            this.comboProvincia.Location = new System.Drawing.Point(381, 77);
+            this.comboProvincia.Name = "comboProvincia";
+            this.comboProvincia.Size = new System.Drawing.Size(131, 24);
+            this.comboProvincia.TabIndex = 32;
+            this.comboProvincia.ValueMember = "IdProvincia";
+            this.comboProvincia.SelectionChangeCommitted += new System.EventHandler(this.ComboProvincia_SelectionChangeCommitted);
+            // 
+            // provinciaModelBindingSource
+            // 
+            this.provinciaModelBindingSource.DataSource = typeof(AgenciaViajes.Dominio.ProvinciaModel);
+            // 
+            // txtCUIT
+            // 
+            this.txtCUIT.Location = new System.Drawing.Point(127, 192);
+            this.txtCUIT.Name = "txtCUIT";
+            this.txtCUIT.Size = new System.Drawing.Size(131, 23);
+            this.txtCUIT.TabIndex = 31;
+            // 
+            // txtDNI
+            // 
+            this.txtDNI.Location = new System.Drawing.Point(127, 163);
+            this.txtDNI.Name = "txtDNI";
+            this.txtDNI.Size = new System.Drawing.Size(131, 23);
+            this.txtDNI.TabIndex = 30;
+            // 
+            // lblTipoDocumento
+            // 
+            this.lblTipoDocumento.AutoSize = true;
+            this.lblTipoDocumento.ForeColor = System.Drawing.Color.DimGray;
+            this.lblTipoDocumento.Location = new System.Drawing.Point(20, 224);
+            this.lblTipoDocumento.Name = "lblTipoDocumento";
+            this.lblTipoDocumento.Size = new System.Drawing.Size(92, 16);
+            this.lblTipoDocumento.TabIndex = 29;
+            this.lblTipoDocumento.Text = "Documento :";
+            // 
+            // lblTipoCliente
+            // 
+            this.lblTipoCliente.AutoSize = true;
+            this.lblTipoCliente.ForeColor = System.Drawing.Color.DimGray;
+            this.lblTipoCliente.Location = new System.Drawing.Point(20, 20);
+            this.lblTipoCliente.Name = "lblTipoCliente";
+            this.lblTipoCliente.Size = new System.Drawing.Size(46, 16);
+            this.lblTipoCliente.TabIndex = 29;
+            this.lblTipoCliente.Text = "Tipo :";
+            // 
+            // lblCUIT
+            // 
+            this.lblCUIT.AutoSize = true;
+            this.lblCUIT.ForeColor = System.Drawing.Color.DimGray;
+            this.lblCUIT.Location = new System.Drawing.Point(20, 195);
+            this.lblCUIT.Name = "lblCUIT";
+            this.lblCUIT.Size = new System.Drawing.Size(50, 16);
+            this.lblCUIT.TabIndex = 29;
+            this.lblCUIT.Text = "CUIT :";
+            // 
+            // txtTelefono
+            // 
+            this.txtTelefono.Location = new System.Drawing.Point(127, 134);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(131, 23);
+            this.txtTelefono.TabIndex = 25;
+            // 
+            // txtCalleNro
+            // 
+            this.txtCalleNro.Location = new System.Drawing.Point(381, 166);
+            this.txtCalleNro.Name = "txtCalleNro";
+            this.txtCalleNro.Size = new System.Drawing.Size(131, 23);
+            this.txtCalleNro.TabIndex = 24;
+            // 
+            // txtCalle
+            // 
+            this.txtCalle.Location = new System.Drawing.Point(381, 137);
+            this.txtCalle.Name = "txtCalle";
+            this.txtCalle.Size = new System.Drawing.Size(131, 23);
+            this.txtCalle.TabIndex = 23;
+            // 
+            // comboPais
+            // 
+            this.comboPais.DataSource = this.paisModelBindingSource;
+            this.comboPais.DisplayMember = "Pais";
+            this.comboPais.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboPais.FormattingEnabled = true;
+            this.comboPais.Location = new System.Drawing.Point(381, 47);
+            this.comboPais.Name = "comboPais";
+            this.comboPais.Size = new System.Drawing.Size(131, 24);
+            this.comboPais.TabIndex = 22;
+            this.comboPais.ValueMember = "IdPais";
+            this.comboPais.SelectionChangeCommitted += new System.EventHandler(this.ComboPais_SelectionChangeCommitted);
+            // 
+            // paisModelBindingSource
+            // 
+            this.paisModelBindingSource.DataSource = typeof(AgenciaViajes.Dominio.PaisModel);
+            // 
+            // txtRazonSocial
+            // 
+            this.txtRazonSocial.Location = new System.Drawing.Point(127, 105);
+            this.txtRazonSocial.Name = "txtRazonSocial";
+            this.txtRazonSocial.Size = new System.Drawing.Size(131, 23);
+            this.txtRazonSocial.TabIndex = 21;
+            // 
+            // txtApellido
+            // 
+            this.txtApellido.Location = new System.Drawing.Point(127, 76);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(131, 23);
+            this.txtApellido.TabIndex = 20;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(127, 47);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(131, 23);
+            this.txtNombre.TabIndex = 19;
+            // 
+            // lblDNI
+            // 
+            this.lblDNI.AutoSize = true;
+            this.lblDNI.ForeColor = System.Drawing.Color.DimGray;
+            this.lblDNI.Location = new System.Drawing.Point(20, 166);
+            this.lblDNI.Name = "lblDNI";
+            this.lblDNI.Size = new System.Drawing.Size(41, 16);
+            this.lblDNI.TabIndex = 18;
+            this.lblDNI.Text = "DNI :";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.ForeColor = System.Drawing.Color.DimGray;
+            this.label10.Location = new System.Drawing.Point(20, 239);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(0, 16);
+            this.label10.TabIndex = 17;
+            // 
+            // lblTelefono
+            // 
+            this.lblTelefono.AutoSize = true;
+            this.lblTelefono.ForeColor = System.Drawing.Color.DimGray;
+            this.lblTelefono.Location = new System.Drawing.Point(20, 137);
+            this.lblTelefono.Name = "lblTelefono";
+            this.lblTelefono.Size = new System.Drawing.Size(74, 16);
+            this.lblTelefono.TabIndex = 16;
+            this.lblTelefono.Text = "Teléfono :";
+            // 
+            // lblCalleNro
+            // 
+            this.lblCalleNro.AutoSize = true;
+            this.lblCalleNro.ForeColor = System.Drawing.Color.DimGray;
+            this.lblCalleNro.Location = new System.Drawing.Point(317, 169);
+            this.lblCalleNro.Name = "lblCalleNro";
+            this.lblCalleNro.Size = new System.Drawing.Size(57, 16);
+            this.lblCalleNro.TabIndex = 15;
+            this.lblCalleNro.Text = "Altura :";
+            // 
+            // lblCalle
+            // 
+            this.lblCalle.AutoSize = true;
+            this.lblCalle.ForeColor = System.Drawing.Color.DimGray;
+            this.lblCalle.Location = new System.Drawing.Point(325, 140);
+            this.lblCalle.Name = "lblCalle";
+            this.lblCalle.Size = new System.Drawing.Size(49, 16);
+            this.lblCalle.TabIndex = 14;
+            this.lblCalle.Text = "Calle :";
+            // 
+            // lblCiudad
+            // 
+            this.lblCiudad.AutoSize = true;
+            this.lblCiudad.ForeColor = System.Drawing.Color.DimGray;
+            this.lblCiudad.Location = new System.Drawing.Point(311, 110);
+            this.lblCiudad.Name = "lblCiudad";
+            this.lblCiudad.Size = new System.Drawing.Size(62, 16);
+            this.lblCiudad.TabIndex = 13;
+            this.lblCiudad.Text = "Ciudad :";
+            // 
+            // lblNacionalidad
+            // 
+            this.lblNacionalidad.AutoSize = true;
+            this.lblNacionalidad.ForeColor = System.Drawing.Color.DimGray;
+            this.lblNacionalidad.Location = new System.Drawing.Point(273, 198);
+            this.lblNacionalidad.Name = "lblNacionalidad";
+            this.lblNacionalidad.Size = new System.Drawing.Size(100, 16);
+            this.lblNacionalidad.TabIndex = 12;
+            this.lblNacionalidad.Text = "Nacionalidad :";
+            // 
+            // lblRazonSocial
+            // 
+            this.lblRazonSocial.AutoSize = true;
+            this.lblRazonSocial.ForeColor = System.Drawing.Color.DimGray;
+            this.lblRazonSocial.Location = new System.Drawing.Point(20, 108);
+            this.lblRazonSocial.Name = "lblRazonSocial";
+            this.lblRazonSocial.Size = new System.Drawing.Size(101, 16);
+            this.lblRazonSocial.TabIndex = 11;
+            this.lblRazonSocial.Text = "Razón Social :";
+            // 
+            // lblApellido
+            // 
+            this.lblApellido.AutoSize = true;
+            this.lblApellido.ForeColor = System.Drawing.Color.DimGray;
+            this.lblApellido.Location = new System.Drawing.Point(20, 79);
+            this.lblApellido.Name = "lblApellido";
+            this.lblApellido.Size = new System.Drawing.Size(68, 16);
+            this.lblApellido.TabIndex = 10;
+            this.lblApellido.Text = "Apellido :";
+            // 
+            // gridClientes
+            // 
+            this.gridClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.btnEditar,
+            this.ELIMINAR});
+            this.gridClientes.Location = new System.Drawing.Point(74, 383);
+            this.gridClientes.Name = "gridClientes";
+            this.gridClientes.Size = new System.Drawing.Size(539, 204);
+            this.gridClientes.TabIndex = 11;
             // 
             // btnEditar
             // 
@@ -436,6 +490,23 @@ namespace AgenciaViajes.Win
             this.ELIMINAR.Text = "ELIMINAR";
             this.ELIMINAR.UseColumnTextForButtonValue = true;
             // 
+            // comboNacionalidad
+            // 
+            this.comboNacionalidad.DataSource = this.nacionalidadModelBindingSource;
+            this.comboNacionalidad.DisplayMember = "Gentilicio";
+            this.comboNacionalidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboNacionalidad.FormattingEnabled = true;
+            this.comboNacionalidad.Location = new System.Drawing.Point(379, 195);
+            this.comboNacionalidad.Name = "comboNacionalidad";
+            this.comboNacionalidad.Size = new System.Drawing.Size(131, 24);
+            this.comboNacionalidad.TabIndex = 33;
+            this.comboNacionalidad.ValueMember = "IdPais";
+            this.comboNacionalidad.SelectionChangeCommitted += new System.EventHandler(this.ComboCiudad_SelectionChangeCommitted);
+            // 
+            // nacionalidadModelBindingSource
+            // 
+            this.nacionalidadModelBindingSource.DataSource = typeof(AgenciaViajes.Dominio.PaisModel);
+            // 
             // Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -443,16 +514,20 @@ namespace AgenciaViajes.Win
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(684, 610);
             this.ControlBox = false;
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.gridClientes);
             this.Controls.Add(this.gbxAltaCliente);
             this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblTitulo);
             this.Name = "Clientes";
             this.gbxAltaCliente.ResumeLayout(false);
             this.gbxAltaCliente.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bd_AgenciaViajesDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bdAgenciaViajesDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tipoDeDocumentoModelBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tipoDeClienteModelBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ciudadModelBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.provinciaModelBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.paisModelBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridClientes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nacionalidadModelBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -460,42 +535,48 @@ namespace AgenciaViajes.Win
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.GroupBox gbxAltaCliente;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox comboPais;
+        private System.Windows.Forms.TextBox txtRazonSocial;
+        private System.Windows.Forms.TextBox txtApellido;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.Label lblDNI;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.RadioButton rbtCorporativo;
-        private System.Windows.Forms.RadioButton rbtParticular;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label lblTelefono;
+        private System.Windows.Forms.Label lblCalleNro;
+        private System.Windows.Forms.Label lblCalle;
+        private System.Windows.Forms.Label lblCiudad;
+        private System.Windows.Forms.Label lblNacionalidad;
+        private System.Windows.Forms.Label lblRazonSocial;
+        private System.Windows.Forms.Label lblApellido;
+        private System.Windows.Forms.Label lblPais;
+        private System.Windows.Forms.Label lblProvincia;
+        private System.Windows.Forms.ComboBox comboCiudad;
+        private System.Windows.Forms.ComboBox comboProvincia;
+        private System.Windows.Forms.TextBox txtCUIT;
+        private System.Windows.Forms.TextBox txtDNI;
+        private System.Windows.Forms.Label lblCUIT;
+        private System.Windows.Forms.TextBox txtTelefono;
+        private System.Windows.Forms.TextBox txtCalleNro;
+        private System.Windows.Forms.TextBox txtCalle;
+        private System.Windows.Forms.DataGridView gridClientes;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.DataGridViewButtonColumn btnEditar;
         private System.Windows.Forms.DataGridViewButtonColumn ELIMINAR;
-        private System.Windows.Forms.BindingSource bdAgenciaViajesDataSetBindingSource;
-        private bd_AgenciaViajesDataSet bd_AgenciaViajesDataSet;
+        private System.Windows.Forms.BindingSource ciudadModelBindingSource;
+        private System.Windows.Forms.BindingSource provinciaModelBindingSource;
+        private System.Windows.Forms.BindingSource paisModelBindingSource;
+        private System.Windows.Forms.ComboBox comboTipoCliente;
+        private System.Windows.Forms.BindingSource tipoDeClienteModelBindingSource;
+        private System.Windows.Forms.Label lblTipoCliente;
+        private System.Windows.Forms.ComboBox comboTipoDocumento;
+        private System.Windows.Forms.BindingSource tipoDeDocumentoModelBindingSource;
+        private System.Windows.Forms.Label lblTipoDocumento;
+        private System.Windows.Forms.ComboBox comboNacionalidad;
+        private System.Windows.Forms.BindingSource nacionalidadModelBindingSource;
     }
 }
