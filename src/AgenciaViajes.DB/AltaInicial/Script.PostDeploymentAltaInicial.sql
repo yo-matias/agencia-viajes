@@ -16,4 +16,5 @@ begin
     :r .\AltaInicial_TiposDeClientes.sql
     :r .\AltaInicial_TiposDeDocumento.sql
     :r .\AltaInicial_UsuarioAdmin.sql
+    :r .\AltaInicial_Clientes.sql
 end

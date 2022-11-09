@@ -89,6 +89,7 @@
     <None Include="AltaInicial\AltaInicial_TiposDeDocumento.sql" />
     <None Include="AltaInicial\AltaInicial_TiposDeClientes.sql" />
     <None Include="AltaInicial\AltaInicial_FormasDePago.sql" />
+    <None Include="AltaInicial\AltaInicial_Clientes.sql" />
   </ItemGroup>
   <ItemGroup>
     <ArtifactReference Include="$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\130\SqlSchemas\master.dacpac">
