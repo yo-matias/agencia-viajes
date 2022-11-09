@@ -12,6 +12,14 @@ namespace AgenciaViajes.Datos
             this.Property(e => e.Pais)
                 .IsUnicode(false);
 
+            this.Property(e => e.Gentilicio)
+                .IsUnicode(false);
+
+            this.HasMany(e => e.Clientes)
+                .WithRequired(e => e.Nacionalidad)
+                .HasForeignKey(e => e.NacionalidadId)
+                .WillCascadeOnDelete(false);
+
             this.HasMany(e => e.Provincias)
                 .WithRequired(e => e.Paises)
                 .WillCascadeOnDelete(false);

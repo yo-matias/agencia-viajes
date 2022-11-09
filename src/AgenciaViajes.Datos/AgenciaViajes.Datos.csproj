@@ -70,10 +70,14 @@
     <Compile Include="DbContext\EntidadesDb.cs" />
     <Compile Include="DbContext\Mapeo\ClientesMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositorios\CiudadRepositorio.cs" />
     <Compile Include="Repositorios\ClienteRepositorio.cs" />
     <Compile Include="Repositorios\ContraseñaRepositorio.cs" />
     <Compile Include="Repositorios\FacturacionRepositorio.cs" />
     <Compile Include="Repositorios\PaisesRepositorio.cs" />
+    <Compile Include="Repositorios\ProvinciaRepositorio.cs" />
+    <Compile Include="Repositorios\TipoDeClienteRepositorio.cs" />
+    <Compile Include="Repositorios\TipoDeDocumentoRepositorio.cs" />
     <Compile Include="Repositorios\UsuariosRepositorio.cs" />
   </ItemGroup>
   <ItemGroup>

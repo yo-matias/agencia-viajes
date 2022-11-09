@@ -13,7 +13,7 @@ namespace AgenciaViajes.Datos
 
             using (var context = new EntidadesDb())
             {
-                paises = context.Paises.ToList();
+                paises = context.Paises.OrderBy(p => p.Pais).ToList();
             }
 
             return paises;

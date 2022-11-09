@@ -18,9 +18,6 @@ namespace AgenciaViajes.Datos
             this.Property(e => e.ApellidoCliente)
                 .IsUnicode(false);
 
-            this.Property(e => e.Nacionalidad)
-                .IsUnicode(false);
-
             this.HasMany(e => e.Facturas)
                 .WithRequired(e => e.Clientes)
                 .WillCascadeOnDelete(false);
