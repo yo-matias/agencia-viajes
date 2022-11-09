@@ -1,4 +1,5 @@
 ﻿using AgenciaViajes.Datos;
+using AgenciaViajes.Datos.Repositorios;
 using AgenciaViajes.Dominio;
 using System;
 using System.Collections.Generic;
@@ -19,6 +20,38 @@ namespace AgenciaViajes.Negocio.Localidades
             var paises = PaisesRepositorio.ObtenerPaises();
 
             return paises;
+        }
+
+        /// <summary>
+        /// Obtiene la información de todos las provincias
+        /// </summary>
+        /// <returns>Lista de Información de Provincias</returns>
+        public static List<ProvinciaModel> ObtenerProvincias()
+        {
+            return ProvinciaRepositorio.ObtenerProvincias();
+        }
+
+        public static List<ProvinciaModel> ObtenerProvinciasPorPais(int idPais)
+        {
+            return ProvinciaRepositorio.ObtenerProvinciasPorPais(idPais);
+        }
+
+        /// <summary>
+        /// Obtiene la información de todos las ciudades
+        /// </summary>
+        /// <returns>Lista de Información de Ciudades</returns>
+        public static List<CiudadModel> ObtenerCiudades()
+        {
+            return CiudadRepositorio.ObtenerCiudades();
+        }
+
+        /// <summary>
+        /// Obtiene la información de todos las ciudades
+        /// </summary>
+        /// <returns>Lista de Información de Ciudades</returns>
+        public static List<CiudadModel> ObtenerCiudadesPorProvincia(int idProvincia)
+        {
+            return CiudadRepositorio.ObtenerCiudadesPorProvincia(idProvincia);
         }
     }
 }
