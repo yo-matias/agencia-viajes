@@ -31,14 +31,15 @@ namespace AgenciaViajes.Dominio
         [StringLength(60)]
         public string ApellidoCliente { get; set; }
 
-        [StringLength(60)]
-        public string Nacionalidad { get; set; }
+        public int NacionalidadId { get; set; }
 
         public bool Habilitado { get; set; }
 
         public DateTime FechaAlta { get; set; }
 
         public DateTime? FechaBaja { get; set; }
+
+        public virtual PaisModel Nacionalidad { get; set; }
 
         public virtual CiudadModel Ciudades { get; set; }
 

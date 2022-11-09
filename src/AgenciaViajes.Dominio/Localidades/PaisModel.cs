@@ -17,7 +17,13 @@ namespace AgenciaViajes.Dominio
         [Required]
         [StringLength(60)]
         public string Pais { get; set; }
-        
+
+        [Required]
+        [StringLength(60)]
+        public string Gentilicio { get; set; }
+
+        public virtual ICollection<ClienteModel> Clientes { get; set; }
+
         public virtual ICollection<ProvinciaModel> Provincias { get; set; }
     }
 }
