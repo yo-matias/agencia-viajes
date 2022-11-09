@@ -74,7 +74,6 @@
     <Build Include="Tables\TiposCliente.sql" />
     <Build Include="Tables\Paquetes.sql" />
     <Build Include="Tables\Clientes.sql" />
-    <Build Include="Tables\Clientes_X_TiposDocumento.sql" />
     <Build Include="Tables\Facturas.sql" />
     <Build Include="Tables\DetallesFactura.sql" />
     <Build Include="Tables\Contraseñas.sql" />
