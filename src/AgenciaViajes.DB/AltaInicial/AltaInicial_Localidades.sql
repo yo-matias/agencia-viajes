@@ -1,7 +1,7 @@
 ﻿DECLARE @IdPais INT, @IdProvincia INT;
 
 -- Argentina
-INSERT INTO [dbo].[Paises] ([Pais],[Gentilicio]) VALUES ('Argentina', 'Argentino');
+INSERT INTO [dbo].[Paises] ([Pais],[Gentilicio]) VALUES ('Argentina', 'Argentina/o');
 SET @IdPais = SCOPE_IDENTITY();
 -- Argentina -- Santa Fe
 INSERT INTO [dbo].[Provincias]([Provincia],[IdPais]) VALUES('Santa Fe', @IdPais);
@@ -29,7 +29,7 @@ INSERT INTO [dbo].[Ciudades] ([Ciudad],[IdProvincia]) VALUES ('Buenos Aires', @I
 
 
 -- Brazil
-INSERT INTO [dbo].[Paises] ([Pais],[Gentilicio]) VALUES ('Brazil', 'Brasilero');
+INSERT INTO [dbo].[Paises] ([Pais],[Gentilicio]) VALUES ('Brazil', 'Brasileña/o');
 SET @IdPais = SCOPE_IDENTITY();
 INSERT INTO [dbo].[Provincias]([Provincia],[IdPais]) VALUES('Pará', @IdPais);
 SET @IdProvincia = SCOPE_IDENTITY();
@@ -38,8 +38,11 @@ INSERT INTO [dbo].[Provincias]([Provincia],[IdPais]) VALUES('Río Grande del Sur
 SET @IdProvincia = SCOPE_IDENTITY();
 INSERT INTO [dbo].[Ciudades] ([Ciudad],[IdProvincia]) VALUES ('Porto Alegre', @IdProvincia);
 
+
+
+
 -- Uruguay
-INSERT INTO [dbo].[Paises] ([Pais],[Gentilicio]) VALUES ('Uruguay', 'Uruguayo');
+INSERT INTO [dbo].[Paises] ([Pais],[Gentilicio]) VALUES ('Uruguay', 'Uruguaya/o');
 SET @IdPais = SCOPE_IDENTITY();
 
 INSERT INTO [dbo].[Provincias]([Provincia],[IdPais]) VALUES('Montevideo', @IdPais);
@@ -54,8 +57,12 @@ INSERT INTO [dbo].[Provincias]([Provincia],[IdPais]) VALUES('Salto', @IdPais);
 SET @IdProvincia = SCOPE_IDENTITY();
 INSERT INTO [dbo].[Ciudades] ([Ciudad],[IdProvincia]) VALUES ('Salto', @IdProvincia);
 
+
+
+
+
 -- Chile
-INSERT INTO [dbo].[Paises] ([Pais],[Gentilicio]) VALUES ('Chile', 'Chileno');
+INSERT INTO [dbo].[Paises] ([Pais],[Gentilicio]) VALUES ('Chile', 'Chilena/o');
 SET @IdPais = SCOPE_IDENTITY();
 
 INSERT INTO [dbo].[Provincias]([Provincia],[IdPais]) VALUES('Arica', @IdPais);
@@ -69,3 +76,13 @@ INSERT INTO [dbo].[Ciudades] ([Ciudad],[IdProvincia]) VALUES ('Coquimbo', @IdPro
 INSERT INTO [dbo].[Provincias]([Provincia],[IdPais]) VALUES('Santiago', @IdPais);
 SET @IdProvincia = SCOPE_IDENTITY();
 INSERT INTO [dbo].[Ciudades] ([Ciudad],[IdProvincia]) VALUES ('Santiago', @IdProvincia);
+
+
+
+
+
+INSERT INTO [dbo].[Paises] ([Pais],[Gentilicio]) VALUES ('Colombia', 'Colombiana/o');
+INSERT INTO [dbo].[Paises] ([Pais],[Gentilicio]) VALUES ('Cuba', 'Cubana/o');
+INSERT INTO [dbo].[Paises] ([Pais],[Gentilicio]) VALUES ('Venezuela', 'Venezolana/o');
+INSERT INTO [dbo].[Paises] ([Pais],[Gentilicio]) VALUES ('Ecuador', 'Ecuatoriana/o');
+INSERT INTO [dbo].[Paises] ([Pais],[Gentilicio]) VALUES ('Costa Rica ', 'Costarricense');
