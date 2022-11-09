@@ -44,6 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTO\ClienteCorporativo.cs" />
+    <Compile Include="DTO\ClienteFormulario.cs" />
+    <Compile Include="DTO\ClienteGrilla.cs" />
+    <Compile Include="DTO\ClienteGenerico.cs" />
+    <Compile Include="DTO\ClienteParticular.cs" />
     <Compile Include="Localidades\CiudadModel.cs" />
     <Compile Include="Clientes\ClienteModel.cs" />
     <Compile Include="Clientes\ClientePorTipoDocumento.cs" />
@@ -61,6 +66,8 @@
     <Compile Include="Seguridad\ContraseñaModel.cs" />
     <Compile Include="Seguridad\UsuarioModel.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="DTO\ClienteDiagram.cd" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
