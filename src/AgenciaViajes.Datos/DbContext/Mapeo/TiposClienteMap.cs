@@ -13,7 +13,7 @@ namespace AgenciaViajes.Datos
                 .IsUnicode(false);
 
             this.HasMany(e => e.Clientes)
-                .WithRequired(e => e.TiposCliente)
+                .WithRequired(e => e.TipoCliente)
                 .WillCascadeOnDelete(false);
         }
     }

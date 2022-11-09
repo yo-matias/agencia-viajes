@@ -12,10 +12,19 @@ namespace AgenciaViajes.Datos
             this.Property(e => e.Calle)
                 .IsUnicode(false);
 
+            this.Property(e => e.RazónSocial)
+                .IsUnicode(false);
+
             this.Property(e => e.NombreCliente)
                 .IsUnicode(false);
 
             this.Property(e => e.ApellidoCliente)
+                .IsUnicode(false);
+
+            this.Property(e => e.DocumentoNro)
+                .IsUnicode(false);
+
+            this.Property(e => e.CUIT)
                 .IsUnicode(false);
 
             this.HasMany(e => e.Facturas)

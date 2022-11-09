@@ -11,6 +11,10 @@ namespace AgenciaViajes.Datos
 
             this.Property(e => e.DescripcionTipoDocumento)
                 .IsUnicode(false);
+
+            this.HasMany(e => e.Clientes)
+                .WithOptional(e => e.TipoDocumento)
+                .HasForeignKey(e => e.DocumentoTipoId);
         }
     }
 }

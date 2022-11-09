@@ -51,7 +51,6 @@
     <Compile Include="DTO\ClienteParticular.cs" />
     <Compile Include="Localidades\CiudadModel.cs" />
     <Compile Include="Clientes\ClienteModel.cs" />
-    <Compile Include="Clientes\ClientePorTipoDocumento.cs" />
     <Compile Include="Facturacion\FacturaDetalleModel.cs" />
     <Compile Include="Facturacion\FacturaModel.cs" />
     <Compile Include="Facturacion\FormaDePagoModel.cs" />

@@ -15,7 +15,6 @@ namespace AgenciaViajes.Datos
 
         public virtual DbSet<CiudadModel> Ciudades { get; set; }
         public virtual DbSet<ClienteModel> Clientes { get; set; }
-        public virtual DbSet<ClientePorTipoDocumento> Clientes_X_TiposDocumento { get; set; }
         public virtual DbSet<FacturaDetalleModel> DetallesFactura { get; set; }
         public virtual DbSet<FacturaModel> Facturas { get; set; }
         public virtual DbSet<FormaDePagoModel> FormasDePago { get; set; }
@@ -35,8 +34,9 @@ namespace AgenciaViajes.Datos
             // Mapeo de propiedades de cada entidad dentro de clases individuales
             modelBuilder.Configurations.Add(new CiudadesMap());
             modelBuilder.Configurations.Add(new ClientesMap());
-            modelBuilder.Configurations.Add(new Clientes_X_TiposDocumentoMap());
-            
+            modelBuilder.Configurations.Add(new TiposClienteMap());
+            modelBuilder.Configurations.Add(new TiposDocumentoMap());
+
             modelBuilder.Configurations.Add(new DetallesFacturaMap());
             modelBuilder.Configurations.Add(new FacturasMap());
             modelBuilder.Configurations.Add(new FormasDePagoMap());
@@ -45,8 +45,6 @@ namespace AgenciaViajes.Datos
 
             modelBuilder.Configurations.Add(new PaquetesMap());
             modelBuilder.Configurations.Add(new ProvinciasMap());
-            modelBuilder.Configurations.Add(new TiposClienteMap());
-            modelBuilder.Configurations.Add(new TiposDocumentoMap());
             modelBuilder.Configurations.Add(new TiposPaqueteMap());
             
             modelBuilder.Configurations.Add(new UsuariosMap());

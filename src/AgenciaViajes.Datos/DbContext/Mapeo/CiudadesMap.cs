@@ -13,7 +13,7 @@ namespace AgenciaViajes.Datos
                 .IsUnicode(false);
 
             this.HasMany(e => e.Clientes)
-                .WithRequired(e => e.Ciudades)
+                .WithRequired(e => e.Ciudad)
                 .WillCascadeOnDelete(false);
 
             this.HasMany(e => e.Lugares)
