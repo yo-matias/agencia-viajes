@@ -53,5 +53,10 @@ namespace AgenciaViajes.Negocio.Localidades
         {
             return CiudadRepositorio.ObtenerCiudadesPorProvincia(idProvincia);
         }
+
+        public static List<CiudadModel> ObtenerLocalidadesCompleto()
+        {
+            return CiudadRepositorio.ObtenerCiudadesCompleto();
+        }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using AgenciaViajes.Datos;
 using AgenciaViajes.Dominio;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 
 namespace AgenciaViajes.Datos

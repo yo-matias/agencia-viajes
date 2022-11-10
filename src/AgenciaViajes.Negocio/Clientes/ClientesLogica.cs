@@ -40,9 +40,14 @@ namespace AgenciaViajes.Negocio.Clientes
         {
 
             return TipoDeDocumentoRepositorio.ObtenerTiposDeDocumento();
-        } 
+        }
 
         #endregion
+
+        public static void GuardarCliente(ClienteModel cliente)
+        {
+            ClienteRepositorio.GuardarCliente(cliente);
+        }
 
         public static void GuardarClienteCorporativo(ClienteCorporativo cliente)
         {
@@ -59,6 +64,36 @@ namespace AgenciaViajes.Negocio.Clientes
         public static void GuardarClienteFormulario(ClienteFormulario cliente)
         {
             throw new NotImplementedException();
+        }
+
+        public static List<ClienteGrid> ObtenerClientesGrid()
+        {
+            List<ClienteGrid> grid = new List<ClienteGrid>();
+
+            var clientes = ObtenerClientesHabilitados();
+
+            foreach (var cliente in clientes)
+            {
+                grid.Add(new ClienteGrid
+                {
+                    IdCliente = cliente.IdCliente,
+                    TipoCliente = cliente.TipoCliente.DescripcionTipoCliente,
+                    Descripcion = cliente.IdTipoCliente == 1 ? $"{cliente.NombreCliente} {cliente.ApellidoCliente}" : cliente.RazónSocial
+                });
+            }
+
+            return grid;
+        }
+
+        public static ClienteModel ObtenerClientePorId(int idCliente)
+        {
+            return ClienteRepositorio.ObtenerClientePorId(idCliente);
+        }
+
+        public static void EliminarCliente(int idCliente)
+        {
+
+            ClienteRepositorio.BajaLogicaCliente(idCliente);
         }
     }
 }

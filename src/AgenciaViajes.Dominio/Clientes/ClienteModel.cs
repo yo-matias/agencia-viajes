@@ -9,11 +9,14 @@ namespace AgenciaViajes.Dominio
         public ClienteModel()
         {
             Facturas = new HashSet<FacturaModel>();
+            FechaAlta = DateTime.Now;
+            Habilitado = true;
         }
 
         [Key]
         public int IdCliente { get; set; }
 
+        [Required]
         public int IdCiudad { get; set; }
 
         [StringLength(60)]
@@ -23,6 +26,7 @@ namespace AgenciaViajes.Dominio
 
         public long? Telefono { get; set; }
 
+        [Required]
         public int IdTipoCliente { get; set; }
 
         [StringLength(60)]
