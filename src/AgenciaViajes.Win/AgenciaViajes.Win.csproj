@@ -274,6 +274,21 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Binding\AgenciaViajes.Dominio.DTO.ClienteGrid.datasource" />
+    <None Include="Binding\AgenciaViajes.Dominio.CiudadModel.datasource" />
+    <None Include="Binding\AgenciaViajes.Dominio.ClienteModel.datasource" />
+    <None Include="Binding\AgenciaViajes.Dominio.ContraseñaModel.datasource" />
+    <None Include="Binding\AgenciaViajes.Dominio.FacturaDetalleModel.datasource" />
+    <None Include="Binding\AgenciaViajes.Dominio.FacturaModel.datasource" />
+    <None Include="Binding\AgenciaViajes.Dominio.FormaDePagoModel.datasource" />
+    <None Include="Binding\AgenciaViajes.Dominio.LugarModel.datasource" />
+    <None Include="Binding\AgenciaViajes.Dominio.PaisModel.datasource" />
+    <None Include="Binding\AgenciaViajes.Dominio.PaqueteModel.datasource" />
+    <None Include="Binding\AgenciaViajes.Dominio.ProvinciaModel.datasource" />
+    <None Include="Binding\AgenciaViajes.Dominio.TipoDeClienteModel.datasource" />
+    <None Include="Binding\AgenciaViajes.Dominio.TipoDeDocumentoModel.datasource" />
+    <None Include="Binding\AgenciaViajes.Dominio.TipoDePaqueteModel.datasource" />
+    <None Include="Binding\AgenciaViajes.Dominio.UsuarioModel.datasource" />
     <None Include="bd_AgenciaViajesDataSet.xsc">
       <DependentUpon>bd_AgenciaViajesDataSet.xsd</DependentUpon>
     </None>
