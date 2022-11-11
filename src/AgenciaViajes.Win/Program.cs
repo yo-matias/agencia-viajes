@@ -16,10 +16,9 @@ namespace AgenciaViajes.Win
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Principal());
+            //Application.Run(new Principal());
 
             // Integración con pantalla de inicio de sesión
-            /*
             Login frmLogin = new Login();
             // Si el formulario retorna éxito, inicio menú principal
             if (frmLogin.ShowDialog() == DialogResult.OK)
@@ -30,7 +29,6 @@ namespace AgenciaViajes.Win
             {
                 Application.Exit();
             }
-            */
         }
     }
 }
